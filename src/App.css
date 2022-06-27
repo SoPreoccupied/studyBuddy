@@ -1,38 +1,99 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-image: url("file:///Users/gabriellewalsh/Downloads/patternpad.svg");
+  /* background-image: url("./assets/Buddy.png");  */
+  background-attachment: fixed;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-size: cover; 
+
+  /* overflow-x: hidden; 
+  overflow-y: auto; */
 }
 
-.App-link {
-  color: #61dafb;
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Orbitron&display=swap');
+
+/* Font for dyslexia, shows up for all text except links and title */
+* {
+  font-family: 'Lexend Deca', sans-serif;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.imageClass {
+  position: relative;
 }
+
+.background {
+  overflow: hidden;
+  position: fixed;
+  position: relative;
+}
+
+.robot {
+  position: absolute;
+  width: 25vw;
+  top: 4vw;
+  left: 4vw;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-top: 0;
+  text-decoration: none; 
+}
+
+/* a:hover {
+  text-decoration-style: dotted;
+}
+
+a:link { 
+  text-decoration: none; 
+} */
+
+li {
+  display: inline-block;
+  padding: 1vw;
+  text-decoration: none; 
+}
+
+nav {
+  background: linear-gradient(#d1fea9 , 70%, #d1fea930);
+  top: -1vw;
+  margin: 0vw;
+  text-decoration: none; 
+  /* #d1fea9 */
+}
+
+.homeAboutSection {
+  text-align: center;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/* overflow: scroll;
+scroll-behavior: smooth; */
