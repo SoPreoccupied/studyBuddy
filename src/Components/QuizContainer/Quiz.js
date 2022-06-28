@@ -1,6 +1,7 @@
-// Credit to Artemij Fedosejev http://react.tips/radio-buttons-in-react-16/
+// CAnswer Oneit to Artemij Fedosejev http://react.tips/radio-buttons-in-react-16/
 // For now aim for 10 Questions
 import Question from "./Question";
+import { Link } from "react-router-dom";
 
 const Quiz = () => {
 
@@ -16,20 +17,30 @@ const Quiz = () => {
     return (
         <div className="wholeQuiz">
             <form onSubmit={handleFormSubmit}>
-                <Question groupName="qOne" question="Whats ur fav color" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qTwo" question="questionTwo" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qThree" question="questionThree" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qFour" question="questionFour" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qFive" question="questionFive" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qSix" question="questionSix" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qSeven" question="questionSeven" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qEight" question="questionEight" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qNine" question="questionNine" optionOne="red" optionTwo="blue" optionThree="yellow"/>
-                <Question groupName="qTen" question="questionTen" optionOne="red" optionTwo="blue" optionThree="yellow"/>
+                <Question groupName="qOne" question="Whats your favorite color?" optionOne="Red" optionTwo="Blue" optionThree="Yellow"/>
+                <br/>
+                <Question groupName="qTwo" question="Question Two" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qThree" question="Question Three" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qFour" question="Question Four" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qFive" question="Question Five" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qSix" question="Question Six" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qSeven" question="Question Seven" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qEight" question="Question Eight" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qNine" question="Question Nine" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
+                <Question groupName="qTen" question="Question Ten" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                <br/>
                     <div className="submitButton">
-                        <button className="button" type="submit">
-                            View my Learning Style!
-                        </button>
+                        <Link to="/AuditoryLearner"><button className="button" type="button">View my Learning Style!</button></Link>
+                        <Link to="/KinestheticLearner"><button className="button" type="button">View my Learning Style!</button></Link>
+                        <Link to="/VisualLearner"><button className="button" type="button">View my Learning Style!</button></Link>
                     </div>
             </form>
       </div>

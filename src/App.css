@@ -4,18 +4,24 @@
   /* background-image: url("./assets/Buddy.png");  */
   background-attachment: fixed;
   min-height: 100vh;
-  background-size: cover; 
+  background-size: cover;
 
   /* overflow-x: hidden; 
   overflow-y: auto; */
 }
 
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Orbitron&display=swap');
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Kranky&family=Lexend+Deca&display=swap');
 
 /* Font for dyslexia, shows up for all text except links and title */
-* {
+p, a {
   font-family: 'Lexend Deca', sans-serif;
+  color: black;
+}
+
+h1, .button {
+  font-family: 'Henny Penny', cursive;
+  /* font-family: 'Kranky', cursive; */
   color: black;
 }
 
@@ -31,6 +37,7 @@
 }
 
 .robot {
+  display: inline-grid; 
   position: absolute;
   width: 25vw;
   top: 4vw;
@@ -40,21 +47,19 @@
 ul {
   padding-inline-start: 0;
   margin-top: 0;
-  text-decoration: none; 
 }
 
-/* a:hover {
+link:hover {
   text-decoration-style: dotted;
-}
+} 
 
-a:link { 
+link:link { 
   text-decoration: none; 
-} */
+} 
 
 li {
   display: inline-block;
   padding: 1vw;
-  text-decoration: none; 
 }
 
 nav {
@@ -71,27 +76,58 @@ nav {
   backdrop-filter: blur(10px);
 }
 
+
+
+
 .button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
+  background-color: #d1fea9;
+  /* background-color: #3DD1E7; */
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  text-decoration: none #000000 solid;
+  /* text-decoration-thickness: auto; */
+  width: 100%;
+  max-width: 460px;
+  /* position: relative; */
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:focus {
+  outline: 0;
+}
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 
