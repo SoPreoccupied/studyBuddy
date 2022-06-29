@@ -23,18 +23,12 @@ function App() {
       <header id="header">
           <nav>
             <ul>
-              {/* <li><Link to='/ResponsiveAppBar'>ResponsiveAppBar</Link></li> */}
               <li><Link to='/Home'>Home</Link></li>
               <li><Link to='/Contact'>Contact</Link></li>
             </ul>
           </nav>
       </header>
       <main>
-        <div className="gridDiv">
-          <div className="leftColumn">
-            {/* <img class="background" src={require("./assets/patternpad.svg").default} /> */}
-            <img className="yellowRobot" src={require("./assets/Buddy.png")} />
-          </div>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/Home' element={<Home />} />
@@ -44,7 +38,6 @@ function App() {
             <Route path='/KinestheticLearner' element={<KinestheticLearner />} />
             <Route path='/VisualLearner' element={<VisualLearner/>} />
           </Routes>
-        </div>
       </main>
       <footer id="footer"></footer>
     </div>

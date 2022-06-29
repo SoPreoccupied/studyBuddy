@@ -2,7 +2,7 @@ const Question = (props) => {
 
 
     return ( 
-        <div className="rightColumn">
+        <div className="wholeQuiz">
             <div className="question1">
                 {props.question}
                 <div className="option1">
