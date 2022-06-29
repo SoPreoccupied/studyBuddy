@@ -5,19 +5,43 @@
 .App {
   text-align: center;
   background-image: url("file:///Users/gabriellewalsh/Downloads/patternpad.svg");
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
-
-  /* overflow-x: hidden;  */
-  /* overflow-y: auto; */
 }
 
-.wholeQuiz {
+/* .wholeQuiz {
   scroll-behavior: smooth;
   overflow-y: scroll;
   white-space: nowrap;
+  } */
+  .gridDiv {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr;
+    max-height: 100vh;
+    overflow: hidden;
   }
+
+  .leftColumn, .rightColumn {
+    /* float: left; */
+    width: 50%;
+    text-align: center;
+
+  }
+
+  .leftColumn {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .rightColumn {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    overflow: scroll;
+  }
+
+
 
 /* Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Henny+Penny&family=Lexend+Deca&family=Pompiere&family=Unkempt&display=swap');
@@ -37,17 +61,11 @@ h1, .button {
 }
 
 .yellowRobot {
-  display: inline-grid; 
-  position: absolute;
+  /* display: inline-grid; 
+  position: absolute; */
   width: 25vw;
-  top: 4vw;
-  left: 4vw;
-}
-
-#mainContent {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  white-space: nowrap;
+  /* top: 4vw;
+  left: 4vw; */
 }
 
 ul {

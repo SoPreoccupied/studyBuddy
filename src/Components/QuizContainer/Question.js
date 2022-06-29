@@ -2,7 +2,7 @@ const Question = (props) => {
 
 
     return ( 
-        <div id='mainContent'>
+        <div className="rightColumn">
             <div className="question1">
                 {props.question}
                 <div className="option1">

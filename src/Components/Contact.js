@@ -1,7 +1,7 @@
 //This is my contact page and corresponding links
 const Contact = (props) => {
     return (
-        <div>
+        <div className="rightColumn">
             <h1>Contact The Developer:</h1>
             <h2>Gabrielle Walsh</h2>
                 <ul id="contact">

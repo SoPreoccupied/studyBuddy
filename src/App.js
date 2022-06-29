@@ -30,26 +30,22 @@ function App() {
           </nav>
       </header>
       <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Home' element={<Home />} />
-          <Route path='/Contact' element={<Contact />} />
-        </Routes>
-          <div id='mainContent'>
-            <Routes>
-            <Route path='/Quiz' element={<Quiz />} />
-              <Route path='/AuditoryLearner' element={<AuditoryLearner />} />
-              <Route path='/KinestheticLearner' element={<KinestheticLearner />} />
-              <Route path='/VisualLearner' element={<VisualLearner/>} />
-            </Routes>
+        <div className="gridDiv">
+          <div className="leftColumn">
+            {/* <img class="background" src={require("./assets/patternpad.svg").default} /> */}
+            <img className="yellowRobot" src={require("./assets/Buddy.png")} />
           </div>
-      </main>
-      <aside>
-        <div className="characters">
-          {/* <img class="background" src={require("./assets/patternpad.svg").default} /> */}
-          <img className="yellowRobot" src={require("./assets/Buddy.png")} />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Home' element={<Home />} />
+            <Route path='/Contact' element={<Contact />} />
+            <Route path='/Quiz' element={<Quiz />} />
+            <Route path='/AuditoryLearner' element={<AuditoryLearner />} />
+            <Route path='/KinestheticLearner' element={<KinestheticLearner />} />
+            <Route path='/VisualLearner' element={<VisualLearner/>} />
+          </Routes>
         </div>
-      </aside>
+      </main>
       <footer id="footer"></footer>
     </div>
   );

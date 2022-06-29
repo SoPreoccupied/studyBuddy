@@ -1,7 +1,7 @@
 const AuditoryLearner = (props) => {
 
     return (
-        <div id='mainContent'>
+        <div className="rightColumn">
             <div>
                 <h1>You are an Auditory Learner!</h1>
                 <p>You are likely to retain information best when you hear it explained to you.</p>
