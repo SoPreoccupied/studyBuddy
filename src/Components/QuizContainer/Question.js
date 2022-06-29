@@ -1,52 +1,45 @@
-import { useState } from "react"
-
 const Question = (props) => {
 
-    // this.setState({
-    //     selectedOption: changeEvent.target.value
-    //   });
-
-    // const handleOptionChange = (changeEvent) => {
-    //     setSelectedOption(Number(changeEvent.target.value))
-    // }
-
-    // const [selectedOption, setSelectedOption] = useState(-1)
 
     return ( 
-    <div className="question1">
-    {props.question}
-        <div className="option1">
-            <label>
-                <input
-                    type="radio"
-                    name={props.groupName}
-                    value="0"
-                    className="option1"
-                />
-               {props.optionOne}
-            </label>
+        <div id='mainContent'>
+            <div className="question1">
+                {props.question}
+                <div className="option1">
+                    <label>
+                        <input
+                            type="radio"
+                            name={props.groupName}
+                            onChange={props.handleOnChange}
+                            value="1"
+                        />
+                    {props.optionOne}
+                    </label>
+                </div>
+                <div className="option2">
+                    <label>
+                    <input
+                        type="radio"
+                        name={props.groupName}
+                        onChange={props.handleOnChange}
+                        value="2"
+                    />
+                        {props.optionTwo}
+                    </label>
+                </div>
+                <div className="option3">
+                    <label>
+                    <input
+                        type="radio"
+                        name={props.groupName}
+                        onChange={props.handleOnChange}
+                        value="3"
+                    />
+                        {props.optionThree}
+                    </label>
+                </div>
+            </div>
         </div>
-        <div className="option2">
-            <label>
-            <input
-                type="radio"
-                name={props.groupName}
-                value="1"
-            />
-                {props.optionTwo}
-            </label>
-        </div>
-        <div className="option3">
-            <label>
-            <input
-                type="radio"
-                name={props.groupName}
-                value="2"
-            />
-                {props.optionThree}
-            </label>
-        </div>
-</div>
 )
 }
 

@@ -1,42 +1,42 @@
+/* credit to button 53 https://getcssscan.com/css-buttons-examples */
+
+/* #d1fea9 */
+
 .App {
   text-align: center;
   background-image: url("file:///Users/gabriellewalsh/Downloads/patternpad.svg");
-  /* background-image: url("./assets/Buddy.png");  */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   min-height: 100vh;
   background-size: cover;
 
-  /* overflow-x: hidden; 
-  overflow-y: auto; */
+  /* overflow-x: hidden;  */
+  /* overflow-y: auto; */
 }
 
+.wholeQuiz {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  white-space: nowrap;
+  }
+
 /* Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Kranky&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Henny+Penny&family=Lexend+Deca&family=Pompiere&family=Unkempt&display=swap');
 
 /* Font for dyslexia, shows up for all text except links and title */
 p, a {
   font-family: 'Lexend Deca', sans-serif;
   color: black;
+
 }
 
 h1, .button {
-  font-family: 'Henny Penny', cursive;
-  /* font-family: 'Kranky', cursive; */
+  /* font-family: 'Lexend Deca', sans-serif; */
+  /* font-family: 'Unkempt', sans-serif; */
+  font-family: 'Pompiere', sans-serif;
   color: black;
 }
 
-
-.imageClass {
-  position: relative;
-}
-
-.background {
-  overflow: hidden;
-  position: fixed;
-  position: relative;
-}
-
-.robot {
+.yellowRobot {
   display: inline-grid; 
   position: absolute;
   width: 25vw;
@@ -44,18 +44,16 @@ h1, .button {
   left: 4vw;
 }
 
+#mainContent {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
 ul {
   padding-inline-start: 0;
   margin-top: 0;
 }
-
-link:hover {
-  text-decoration-style: dotted;
-} 
-
-link:link { 
-  text-decoration: none; 
-} 
 
 li {
   display: inline-block;
@@ -66,18 +64,12 @@ nav {
   background: linear-gradient(#d1fea9 , 70%, #d1fea930);
   top: -1vw;
   margin: 0vw;
-  text-decoration: none; 
-  /* #d1fea9 */
-}
-
-.homeAboutSection {
-  text-align: center;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
 }
 
 
 
+
+/* Do not touch below until last */
 
 .button {
   background-color: #d1fea9;
@@ -129,7 +121,3 @@ nav {
     font-size: 1.25rem;
   }
 }
-
-
-/* overflow: scroll;
-scroll-behavior: smooth; */

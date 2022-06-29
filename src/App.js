@@ -21,10 +21,6 @@ function App() {
   return (
     <div className="App" id="App">
       <header id="header">
-        <div class="imageClass">
-          {/* <img class="background" src={require("./assets/patternpad.svg").default} /> */}
-          <img class="robot" src={require("./assets/Buddy.png")} />
-        </div>
           <nav>
             <ul>
               {/* <li><Link to='/ResponsiveAppBar'>ResponsiveAppBar</Link></li> */}
@@ -35,19 +31,25 @@ function App() {
       </header>
       <main>
         <Routes>
-          {/* <Route path='/ResponsiveAppBar' element={<ResponsiveAppBar />} /> */}
           <Route path='/' element={<Home />} />
           <Route path='/Home' element={<Home />} />
           <Route path='/Contact' element={<Contact />} />
-          <Route path='/Quiz' element={<Quiz />} />
-
-          <Route path='/AuditoryLearner' element={<AuditoryLearner />} />
-          <Route path='/KinestheticLearner' element={<KinestheticLearner />} />
-          <Route path='/VisualLearner' element={<VisualLearner/>} />
-
-          {/* <Route path='/studybuddy' element={<Navigate to='/Home' />} /> */}
         </Routes>
+          <div id='mainContent'>
+            <Routes>
+            <Route path='/Quiz' element={<Quiz />} />
+              <Route path='/AuditoryLearner' element={<AuditoryLearner />} />
+              <Route path='/KinestheticLearner' element={<KinestheticLearner />} />
+              <Route path='/VisualLearner' element={<VisualLearner/>} />
+            </Routes>
+          </div>
       </main>
+      <aside>
+        <div className="characters">
+          {/* <img class="background" src={require("./assets/patternpad.svg").default} /> */}
+          <img className="yellowRobot" src={require("./assets/Buddy.png")} />
+        </div>
+      </aside>
       <footer id="footer"></footer>
     </div>
   );
