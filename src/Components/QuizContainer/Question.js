@@ -3,8 +3,10 @@ const Question = (props) => {
 
     return ( 
         <div className="wholeQuiz">
-            <div className="question1">
+            <div className="questions">
+                <div className="questionsStyling">
                 {props.question}
+                </div>
                 <div className="option1">
                     <label>
                         <input

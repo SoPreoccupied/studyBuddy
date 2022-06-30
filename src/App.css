@@ -4,7 +4,6 @@
 /* dfb7f4 purple*/
 /* #fccba2 orange */
 
-
 .App {
   text-align: center;
   background-image: url("file:///Users/gabriellewalsh/Downloads/patternpad.svg");
@@ -31,10 +30,15 @@
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   overflow: scroll;
-  border-style: ridge;
-  border-color: #dfb7f4;
+  /* border-style: ridge;
+  border-color: #dfb7f4; */
   position: relative;
-  margin-right: 10
+
+
+  border: 10px solid transparent;
+  background-image: radial-gradient(at bottom left, hsl(279, 73%, 84%) ,hsl(204, 0%, 100%,0.2),#fccba2);
+  background-origin: border-box;
+  border-radius: 50% 0%;
 }
 
 
@@ -76,10 +80,19 @@ nav {
   margin: 0vw;
 }
 
-.wholeQuiz {
-  border-style: none !important;
+.questionsStyling {
+  font-family: 'Pompiere', sans-serif;
+  font-size: 25px; 
+  font-weight: 700;
 }
 
+.wholeQuiz, .option1, .option2, .option3 {
+  margin: 1vw;
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+  letter-spacing: 2px;
+
+}
 
 
 
