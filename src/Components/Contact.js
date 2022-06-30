@@ -3,11 +3,11 @@ const Contact = (props) => {
     return (
         <div className="gridDiv">
             <div className="leftColumn">
-                <img className="yellowRobot" src={require("../assets/cuterobot.png")} />
+                <img className="yellowRobot" src={require("../assets/yellowrobot.png")} />
             </div>
             <div className="rightColumn">
-                <h1>Contact The Developer:</h1>
-                <h2>Gabrielle Walsh</h2>
+                <h1>Hello! We are so glad that you're here.</h1>
+                <h2>Let's get in touch!</h2>
                     <ul id="contact">
                         <li><a href={'https://www.linkedin.com/in/gabrielle-walsh-se/'} target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><i class="fa-5x"></i>

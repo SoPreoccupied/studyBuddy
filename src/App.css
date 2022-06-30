@@ -1,52 +1,30 @@
 /* credit to button 53 https://getcssscan.com/css-buttons-examples */
-
-/* #d1fea9 green*/
-/* dfb7f4 purple*/
-/* #fccba2 orange */
-
-.App {
-  text-align: center;
-  background-image: url("file:///Users/gabriellewalsh/Downloads/patternpad.svg");
-  background-attachment: fixed;
-  min-height: 100vh;
-  background-size: cover;
-  background-color: #d1fea9;
-}
-
-.gridDiv {
-  display: grid;
-  grid-template-columns: 30vw 70vw;
-  grid-template-rows: 1fr;
-  max-height: 90vh;
-  overflow: hidden;
-}
-
-.leftColumn {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.rightColumn {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  overflow: scroll;
-  /* border-style: ridge;
-  border-color: #dfb7f4; */
-  position: relative;
+/* Colors */
+/* #64B5F6 blue */
+/* #FFD54F yellow */
+/* #F44336 red */
 
 
-  border: 10px solid transparent;
-  background-image: radial-gradient(at bottom left, hsl(279, 73%, 84%) ,hsl(204, 0%, 100%,0.2),#fccba2);
-  background-origin: border-box;
-  border-radius: 50% 0%;
-}
-
-
+/* Mobile First Design */
 
 /* Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Henny+Penny&family=Lexend+Deca&family=Pompiere&family=Unkempt&display=swap');
 
-/* Font for dyslexia, shows up for all text except links and title */
+.App {
+  text-align: center;
+  background-image: url("assets/patternpadprimary.svg");
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+nav {
+  /* background: linear-gradient(#6fb9f5 , 70%, #d1fea930); */
+  background: #64B5F6;
+  top: -1vw;
+  padding: 3vw;
+}
+
 p, a {
   font-family: 'Lexend Deca', sans-serif;
   color: black;
@@ -60,9 +38,6 @@ h1, .button {
   color: black;
 }
 
-.yellowRobot, .auditoryLearner, .kinestheticLearner, .visualLearner {
-  width: 20vw;
-}
 
 ul {
   padding-inline-start: 0;
@@ -74,10 +49,14 @@ li {
   padding: 1vw;
 }
 
-nav {
-  background: linear-gradient(#d1fea9 , 70%, #d1fea930);
-  top: -1vw;
-  margin: 0vw;
+a {
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5vw;
+}
+
+a:hover {
+  text-decoration: dotted;
 }
 
 .questionsStyling {
@@ -88,25 +67,23 @@ nav {
 
 .wholeQuiz, .option1, .option2, .option3 {
   margin: 1vw;
-  backdrop-filter: blur(5px);
-  background-color: transparent;
+  /* backdrop-filter: blur(5px);
+  background-color: transparent; */
   letter-spacing: 2px;
 
 }
 
-
-
 /* Do not touch below until last */
 
 .button {
-  background-color: #d1fea9;
+  background-color: #6fb9f5;
   /* background-color: #3DD1E7; */
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
   display: flex;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
   justify-content: center;
   line-height: 1.75rem;
   padding: .75rem 1.65rem;
@@ -115,13 +92,20 @@ nav {
   /* text-decoration-thickness: auto; */
   width: 100%;
   max-width: 460px;
-  position: absolute;
+  /* position: absolute; */
   cursor: pointer;
   transform: rotate(-2deg);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   left: 50%;
+
+
+
+  /* margin: 5%, 0, 0, 30%; */
+
+  margin-left: 30%;
+  margin-top: 5%;;
 }
 
 .button:focus {
@@ -147,5 +131,58 @@ nav {
   .button {
     padding: .75rem 3rem;
     font-size: 1.25rem;
+  }
+}
+
+
+
+/* Desktop, and ipads */
+@media (min-width:641px) {
+
+  nav {
+    background: linear-gradient(#6fb9f5 , 70%, #d1fea930);
+    top: -1vw;
+    margin: 0vw;
+    padding: 0vw;
+  }
+  a {
+    margin: 5vw;
+  }
+  .gridDiv {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 1fr;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+
+  .leftColumn {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+  }
+
+  .rightColumn {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    overflow: scroll;
+    /* border-style: ridge;
+    border-color: #dfb7f4; */
+    position: relative;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+
+
+    border: 10px solid transparent;
+    /* background-image:  hsla(51, 100%, 50%, 1); */
+    background-image: radial-gradient(at bottom left, hsla(46, 100%, 65%, 0.2) ,hsla(51, 100%, 50%, 0.1),hsla(46, 100%, 65%, 0.2));
+    /* background-image: radial-gradient(at bottom left, hsla(51, 100%, 50%, 0.1) ,hsla(51, 100%, 50%, 0.1),hsla(51, 100%, 50%, 0.1)); */
+    background-origin: border-box;
+    border-radius: 25% 25%;
+  }
+
+  .yellowRobot, .auditoryLearner, .kinestheticLearner, .visualLearner {
+    width: 20vw;
+    margin: 20%;
   }
 }

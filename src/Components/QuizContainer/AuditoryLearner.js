@@ -14,7 +14,8 @@ const AuditoryLearner = (props) => {
                             <li><a href={'https://www.naturalreaders.com/'} target="_blank">NaturalReader</a></li>
                             <p>A text to speech tool where you can upload text and documents or convert to mp3 to listen to anywhere anytime.</p>
                             <li><a href={'https://speechify.com/?gclid=CjwKCAjwquWVBhBrEiwAt1Kmwm-zPMCSe3zUzjhd6RrMKOS0-TXURR-CwntZG_YhRXiEV70XCKItXRoC894QAvD_BwE'} target="_blank">Speechify</a></li>
-                            <li><a href={'https://speechify.com/?gclid=CjwKCAjwquWVBhBrEiwAt1Kmwm-zPMCSe3zUzjhd6RrMKOS0-TXURR-CwntZG_YhRXiEV70XCKItXRoC894QAvD_BwE'} target="_blank">Speechify</a></li>
+                            <p>A text to speech tool where you can upload text and documents or convert to mp3 to listen to anywhere anytime.</p>
+                            
                         </ul>
                     <h2>These are some tips to help you offline:</h2>
                     <ul>
