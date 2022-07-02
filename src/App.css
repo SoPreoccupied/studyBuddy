@@ -73,7 +73,7 @@ a:hover {
 
 .rightColumn {
   backdrop-filter: blur(10px);
-  background-image: radial-gradient(at bottom left, hsla(46, 100%, 65%, 0.2) ,hsla(51, 100%, 50%, 0.1),hsla(46, 100%, 65%, 0.2));
+  background-image: radial-gradient(at bottom left, hsla(46, 100%, 65%, 0.3) ,hsla(51, 100%, 50%, 0.3),hsla(46, 100%, 65%, 0.2));
 }
 
 .yellowRobot, .auditoryLearner, .kinestheticLearner, .visualLearner {
