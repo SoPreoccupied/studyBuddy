@@ -3,24 +3,118 @@
 // http://www.educationplanner.org/students/self-assessments/learning-styles-quiz.shtml
 import Question from "./Question";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Quiz = () => {
+    const navigate = useNavigate()
 
 const answersObject = {
     
 }
 
  const handleOptionChange = changeEvent => {
-    // console.log(`Input: ${changeEvent.target.name} is now ${changeEvent.target.value}`)
+    console.log(`Input: ${changeEvent.target.name} is now ${changeEvent.target.value}`)
     answersObject[changeEvent.target.name] = changeEvent.target.value;
 
   };
 
  const handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
+    let aCount = 0;
+    let kCount = 0;
+    let vCount = 0;
 
-    for (const key in answersObject.keys()) {
+    for (const key of Object.keys(answersObject)) {
         console.log(key)
+        if (key == "qOne") {
+            if (answersObject[key] == 1) {
+                vCount++
+            } else if (answersObject[key] == 2) {
+                aCount++
+            } else {
+                kCount++
+            }
+        } else if (key == "qTwo") {
+            if (answersObject[key] == 1) {
+                aCount++
+            } else if (answersObject[key] == 2) {
+                kCount++
+            } else {
+                vCount++
+            }
+        }  else if (key == "qThree") {
+            if (answersObject[key] == 1) {
+                aCount++
+            } else if (answersObject[key] == 2) {
+                vCount++
+            } else {
+                kCount++
+            }
+        } else if (key == "qFour") {
+            if (answersObject[key] == 1) {
+                vCount++
+            } else if (answersObject[key] == 2) {
+                aCount++
+            } else {
+                kCount++
+            }
+        } else if (key == "qFive") {
+            if (answersObject[key] == 1) {
+                vCount++
+            } else if (answersObject[key] == 2) {
+                kCount++
+            } else {
+                aCount++
+            }
+        } else if (key == "qSix") {
+            if (answersObject[key] == 1) {
+                aCount++
+            } else if (answersObject[key] == 2) {
+                vCount++
+            } else {
+                kCount++
+            }
+        } else if (key == "qSeven") {
+            if (answersObject[key] == 1) {
+                kCount++
+            } else if (answersObject[key] == 2) {
+                vCount++
+            } else {
+                aCount++
+            }
+        } else if (key == "qEight") {
+            if (answersObject[key] == 1) {
+                vCount++
+            } else if (answersObject[key] == 2) {
+                aCount++
+            } else {
+                kCount++
+            }
+        } else if (key == "qNine") {
+            if (answersObject[key] == 1) {
+                kCount++
+            } else if (answersObject[key] == 2) {
+                aCount++
+            } else {
+                vCount++
+            }
+        } else if (key == "qTen") {
+            if (answersObject[key] == 1) {
+                vCount++
+            } else if (answersObject[key] == 2) {
+                aCount++
+            } else {
+                kCount++
+            }
+        }
+    }
+    console.log(`v is ${vCount}\nk is ${kCount}\na is ${aCount}`)
+    if (vCount >= kCount && vCount >= aCount) {
+        navigate("/VisualLearner")
+    } else if (kCount >= aCount && kCount >= vCount) {
+        navigate("/KinestheticLearner")
+    } else {
+        navigate("/AuditoryLearner")
     }
   };
 
@@ -50,13 +144,13 @@ const answersObject = {
                         <br/>
                         <Question groupName="qNine" handleOnChange={handleOptionChange} question="9. Where would you rather go to hangout with your friends?" optionOne="An amusement park." optionTwo="A concert." optionThree="A movie."/>
                         <br/>
-                        <Question groupName="qTen" handleOnChange={handleOptionChange} question="10. Question Ten" optionOne="Answer One" optionTwo="Answer Two" optionThree="Answer Three"/>
+                        <Question groupName="qTen" handleOnChange={handleOptionChange} question="10. What would you most like to do to relax?" optionOne="Read a book." optionTwo="Listen to music." optionThree="Exercise (walk, run, play sports, etc.)"/>
                         <br/>
                         <input type="submit" value="submit"/>
                             <div className="submitButton">
-                                <Link to="/AuditoryLearner"><button className="button" type="button">View my Learning Style!</button></Link>
+                                {/* <Link to="/AuditoryLearner"><button className="button" type="button">View my Learning Style!</button></Link>
                                 <Link to="/KinestheticLearner"><button className="button" type="button">View my Learning Style!</button></Link>
-                                <Link to="/VisualLearner"><button className="button" type="button">View my Learning Style!</button></Link>
+                                <Link to="/VisualLearner"><button className="button" type="button">View my Learning Style!</button></Link> */}
                             </div>
                     </form>
             </div>
