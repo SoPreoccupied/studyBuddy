@@ -146,13 +146,8 @@ const answersObject = {
                         <br/>
                         <Question groupName="qTen" handleOnChange={handleOptionChange} question="10. What would you most like to do to relax?" optionOne="Read a book." optionTwo="Listen to music." optionThree="Exercise (walk, run, play sports, etc.)"/>
                         <br/>
-                        <input type="submit" value="submit"/>
-                            <div className="submitButton">
-                                {/* <Link to="/AuditoryLearner"><button className="button" type="button">View my Learning Style!</button></Link>
-                                <Link to="/KinestheticLearner"><button className="button" type="button">View my Learning Style!</button></Link>
-                                <Link to="/VisualLearner"><button className="button" type="button">View my Learning Style!</button></Link> */}
-                            </div>
                     </form>
+                    <button className="button" type="button" onClick={handleFormSubmit}>View my Learning Style!</button>
             </div>
         </div>
     </div>
