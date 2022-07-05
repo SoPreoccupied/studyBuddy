@@ -10,11 +10,12 @@ const AuditoryLearner = (props) => {
                 <p>You are likely to retain information best when you hear it explained to you.</p>
                 <h2>Here are some online resources to set you up for success:</h2>
                     <ul id="learnerLinks">
-                        <li><a href={'https://www.naturalreaders.com/'} target="_blank">NaturalReader</a></li>
-                        <p>A text to speech tool where you can upload text and documents or convert to mp3 to listen to anywhere anytime.</p>
                         <li><a href={'https://speechify.com/?gclid=CjwKCAjwquWVBhBrEiwAt1Kmwm-zPMCSe3zUzjhd6RrMKOS0-TXURR-CwntZG_YhRXiEV70XCKItXRoC894QAvD_BwE'} target="_blank">Speechify</a></li>
                         <p>A text to speech tool where you can upload text and documents or convert to mp3 to listen to anywhere anytime.</p>
-                            
+                        <li><a href={''} target="_blank">Speechify</a></li>
+                        <p></p>
+                        <li><a href={''} target="_blank">Speechify</a></li>
+                        <p></p>
                     </ul>
                 <h2>These are some tips to help you offline:</h2>
                 <ul>

@@ -44,17 +44,13 @@ ul {
 
 li {
   display: inline-block;
-  padding: 1vw;
+  padding: 1vw; 
 }
 
 a {
-  text-decoration: none;
+  text-decoration: #64B5F6 underline;
   font-weight: 600;
   margin: 5vw;
-}
-
-a:hover {
-  text-decoration: dotted;
 }
 
 .questionsStyling {
@@ -65,8 +61,6 @@ a:hover {
 
 .wholeQuiz, .option1, .option2, .option3 {
   margin: 1vw;
-  /* backdrop-filter: blur(5px);
-  background-color: transparent; */
   letter-spacing: 2px;
 
 }
@@ -82,11 +76,8 @@ a:hover {
 }
 
 
-/* Do not touch below until last */
-
 .button {
   background-color: #6fb9f5;
-  /* background-color: #3DD1E7; */
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
@@ -97,15 +88,13 @@ a:hover {
   line-height: 1.75rem;
   padding: .75rem 1.65rem;
   text-align: center;
-  text-decoration: none #000000 solid;
-  /* text-decoration-thickness: auto; */
+  /* text-decoration: none #000000 solid; */
   width: 100%;
   max-width: 460px;
-  /* position: absolute; */
   cursor: pointer;
   transform: rotate(-2deg);
   user-select: none;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   touch-action: manipulation;
   left: 50%;
 

@@ -10,15 +10,20 @@ const KinestheticLearner = (props) => {
                 <p>You retain information best when you are able to physically interact with your environment.</p>
                 <h2>Click on a few of these online resources to help set you up for success:</h2>
                     <ul id="learnerLinks">
-                        <li><a href={'https://www.naturalreaders.com/'} target="_blank">NaturalReader</a></li>
-                        <p>A text to speech tool where you can upload text and documents or convert to mp3 to listen to anywhere anytime.</p>
+                        <li><a href={''} target="_blank"></a></li>
+                        <p></p>
+                        <li><a href={''} target="_blank"></a></li>
+                        <p></p>
+                        <li><a></a></li>
+                        <p></p>
                     </ul>
                 <h2>Here are a few tips to help you actively study offline:</h2>
                 <ul>
-                    <li>Stand up and teach the material you're learning to friends or even rubber ducks!</li>
+                    <li>Stand up and act out the material you're learning to friends, in front of a mirror, or even to rubber ducks!</li>
                     <li>Schedule yourself plenty of short but frequent breaks where you get up and do something active.</li>
                     <li>Write out your notes by hand.</li>
-                    <li></li>
+                    <li>Use a sensory or fidget toy to help you have a physical outlet while studying or test taking.</li>
+                    <li>Listen to recorded lessons while out for a walk.</li>
                 </ul>
             </div>
         </div>
