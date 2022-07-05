@@ -9,10 +9,10 @@ const Home = (props) => {
             </div>
             <div className="rightColumn">
                 <h1>Welcome to Study Buddy!</h1>
-                    <p>Our quiz is is here to help you gain insight by analyzing how YOU best learn.</p>
-                    <p>Naviagting through the learning styles of visual, auditory, and kinesthetic we handpick optimal resources to aid you in your educational journey.</p>
-                    <p>Once you submit your quiz, you'll see your personalized resources and study tips for the learning style that fits you best.</p>
-                    <Link to="/Quiz"><button className="button" type="button">Quiz</button></Link>
+                    <p>We created this quiz to help you gain knowledge into how you personally learn best.</p>
+                    <p>As you navigate through our assesment, you will be matched as a visual, auditory, or kinesthetic learner.</p>
+                    <p>Once you answer all our questions, you'll be directed to helpful resources and study tips to make the most out of your learning style.</p>
+                    <Link to="/Quiz"><button className="button" type="button">Let's go!</button></Link>
             </div>
         </div>
 

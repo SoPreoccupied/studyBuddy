@@ -124,7 +124,7 @@ a:hover {
 .button:after {
   content: '';
   position: absolute;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
@@ -184,4 +184,10 @@ a:hover {
     width: 20vw;
     margin: 20%;
   }
+}
+
+
+/* Sets quiz button to invisible (until all quiz answers are selected) */
+.hidden {
+  display: none;
 }
