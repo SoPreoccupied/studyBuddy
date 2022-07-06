@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/studdybuddy/static/css/main.0ee76ed9.css",
-    "main.js": "/studdybuddy/static/js/main.5f5923e7.js",
-    "static/js/787.cb946161.chunk.js": "/studdybuddy/static/js/787.cb946161.chunk.js",
-    "static/media/yellowrobot.png": "/studdybuddy/static/media/yellowrobot.183b057de474deaa7c71.png",
-    "static/media/auditorylearner.png": "/studdybuddy/static/media/auditorylearner.7a0e429437526591a0aa.png",
-    "static/media/visuallearner.png": "/studdybuddy/static/media/visuallearner.2aecbb254326f7d30e55.png",
-    "static/media/kinestheticlearner.png": "/studdybuddy/static/media/kinestheticlearner.9bcf776a54531343ab78.png",
-    "static/media/patternpadprimary.svg": "/studdybuddy/static/media/patternpadprimary.04696bfeb814f551f3a6.svg",
-    "index.html": "/studdybuddy/index.html",
-    "main.0ee76ed9.css.map": "/studdybuddy/static/css/main.0ee76ed9.css.map",
-    "main.5f5923e7.js.map": "/studdybuddy/static/js/main.5f5923e7.js.map",
-    "787.cb946161.chunk.js.map": "/studdybuddy/static/js/787.cb946161.chunk.js.map"
+    "main.css": "/studybuddy/static/css/main.ee627342.css",
+    "main.js": "/studybuddy/static/js/main.a5dda79c.js",
+    "static/js/787.cb946161.chunk.js": "/studybuddy/static/js/787.cb946161.chunk.js",
+    "static/media/yellowrobot.png": "/studybuddy/static/media/yellowrobot.183b057de474deaa7c71.png",
+    "static/media/auditorylearner.png": "/studybuddy/static/media/auditorylearner.7a0e429437526591a0aa.png",
+    "static/media/visuallearner.png": "/studybuddy/static/media/visuallearner.2aecbb254326f7d30e55.png",
+    "static/media/kinestheticlearner.png": "/studybuddy/static/media/kinestheticlearner.9bcf776a54531343ab78.png",
+    "static/media/patternpadprimary.svg": "/studybuddy/static/media/patternpadprimary.04696bfeb814f551f3a6.svg",
+    "index.html": "/studybuddy/index.html",
+    "main.ee627342.css.map": "/studybuddy/static/css/main.ee627342.css.map",
+    "main.a5dda79c.js.map": "/studybuddy/static/js/main.a5dda79c.js.map",
+    "787.cb946161.chunk.js.map": "/studybuddy/static/js/787.cb946161.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ee76ed9.css",
-    "static/js/main.5f5923e7.js"
+    "static/css/main.ee627342.css",
+    "static/js/main.a5dda79c.js"
   ]
 }
