@@ -7,11 +7,11 @@ const VisualLearner = (props) => {
             </div>
             <div className="rightColumn">
                 <h1>You are a Visual Learner!</h1>
-                <p>You retain information best when you are able to see things that are shown to you.</p>
+                <p>You retain information best when you are able to see things as they are taught to you.</p>
                 <h2>Here are some online resources to set you up for success:</h2>
                     <ul id="learnerLinks">
                         <li><a href={'https://www.beelinereader.com/'} target="_blank">BeeLine Reader</a></li>
-                        <p>BeeLine Reader makes reading on-screen easier by using an eye-guiding color gradient to read morehttps://www.brainpop.com/ effectively and maintain better focus.</p>
+                        <p>BeeLine Reader makes reading on-screen easier by using an eye-guiding color gradient to read more effectively and maintain better focus.</p>
                         <li><a href={'https://www.brainpop.com/'} target="_blank">Brainpop</a></li>
                         <p>Boost achievement for grades K-8 in math, language arts, science, social studies and more by watching videos.</p>
                         <li><a href={'https://bubbl.us/'} target='_blank'>Bubbl</a></li>

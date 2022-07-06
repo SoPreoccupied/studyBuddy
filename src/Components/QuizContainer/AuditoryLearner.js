@@ -12,10 +12,10 @@ const AuditoryLearner = (props) => {
                     <ul id="learnerLinks">
                         <li><a href={'https://speechify.com/?gclid=CjwKCAjwquWVBhBrEiwAt1Kmwm-zPMCSe3zUzjhd6RrMKOS0-TXURR-CwntZG_YhRXiEV70XCKItXRoC894QAvD_BwE'} target="_blank">Speechify</a></li>
                         <p>A text to speech tool where you can upload text and documents or convert to mp3 to listen to anywhere anytime.</p>
-                        <li><a href={''} target="_blank">Speechify</a></li>
-                        <p></p>
-                        <li><a href={''} target="_blank">Speechify</a></li>
-                        <p></p>
+                        <li><a href={'https://www.overdrive.com/apps/sora/'} target="_blank">Sora</a></li>
+                        <p>Reading app for students put together by your local library or school.</p>
+                        <li><a href={'https://storylineonline.net/'} target="_blank">Story Online</a></li>
+                        <p>Online books read to you by notable speakers. Including a supplemental curriculum developed by a credentialed elementary educator.</p>
                     </ul>
                 <h2>These are some tips to help you offline:</h2>
                 <ul>

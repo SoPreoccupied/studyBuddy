@@ -1,6 +1,6 @@
-// CAnswer Oneit to Artemij Fedosejev http://react.tips/radio-buttons-in-react-16/
+// Credit to radio button instruction: CAnswer Oneit to Artemij Fedosejev http://react.tips/radio-buttons-in-react-16/
 
-// http://www.educationplanner.org/students/self-assessments/learning-styles-quiz.shtml
+// Credit to Learning style quiz examples: http://www.educationplanner.org/students/self-assessments/learning-styles-quiz.shtml
 import Question from "./Question";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -108,6 +108,8 @@ const Quiz = () => {
                 }
             }
         }
+
+        // If questions end up in a tie, pick one of the top two learning styles
         console.log(`v is ${vCount}\nk is ${kCount}\na is ${aCount}`)
         if (vCount >= kCount && vCount >= aCount) {
             navigate("/VisualLearner")
