@@ -1,7 +1,7 @@
 {
   "name": "studybuddy",
   "version": "0.1.0",
-  "homepage": "https://sopreoccupied.github.io/studdybuddy",
+  "homepage": "https://sopreoccupied.github.io/studybuddy/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
