@@ -3,7 +3,7 @@ const Contact = (props) => {
     return (
         <div className="gridDiv">
             <div className="leftColumn">
-                <img className="yellowRobot" src={require("../assets/yellowrobot.png")} />
+                <img className="gabbyLogo" src={require("../assets/gabbylogomedium.png")} />
             </div>
             <div className="rightColumn">
                 <h1>Hello! We are so glad that you're here.</h1>

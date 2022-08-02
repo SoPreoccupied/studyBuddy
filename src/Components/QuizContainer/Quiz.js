@@ -1,4 +1,4 @@
-// Credit to radio button instruction: CAnswer Oneit to Artemij Fedosejev http://react.tips/radio-buttons-in-react-16/
+// Credit to radio button instruction: Artemij Fedosejev http://react.tips/radio-buttons-in-react-16/
 
 // Credit to Learning style quiz examples: http://www.educationplanner.org/students/self-assessments/learning-styles-quiz.shtml
 import Question from "./Question";

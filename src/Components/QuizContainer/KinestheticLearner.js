@@ -10,12 +10,12 @@ const KinestheticLearner = (props) => {
                 <p>You retain information best when you are able to physically interact with your environment.</p>
                 <h2>Click on a few of these online resources to help set you up for success:</h2>
                     <ul id="learnerLinks">
-                        <li><a href={'https://apps.apple.com/us/app/scratchjr/id895485086?ign-mpt=uo%3D4'} target="_blank">ScratchJr</a></li>
-                        <p>With ScratchJr, you can learn important new skills as you program your own interactive stories and games.</p>
-                        <li><a href={'classvr.com/virtual-reality-in-education/virtual-augmented-reality-in-elementary-education-age-7-to-11-years/'} target="_blank">Class VR</a></li>
-                        <p>Curriculums brought to life using virtual and augmented reality experinces to aid in your hands on learning experience.</p>
-                        <li><a href={'http://www.tomatotimers.com/'} target="_blank">Tomato Timers</a></li>
-                        <p>TomatoTimers is a customizable and easy to use looping pomodoro timer to keep you energized while you study.</p>
+                        <p>Scratch Jr: Learn important new skills as you program your own interactive stories and games.</p>
+                        <li><a href={'https://www.scratchjr.org/about/info'} target="_blank" className="resources" id="kResource">ScratchJr</a></li>
+                        <p>Class VR: Curriculums brought to life using virtual and augmented reality experinces to aid in your hands on learning experience.</p>
+                        <li><a href={'https://www.classvr.com/us/'} target="_blank" className="resources" id="kResource">Class VR</a></li>
+                        <p>Tomato Timers: A customizable and easy to use looping pomodoro timer to keep you energized while you study.</p>
+                        <li><a href={'http://www.tomatotimers.com/'} target="_blank" className="resources" id="kResource">Tomato Timers</a></li>
                     </ul>
                 <h2>Here are a few tips to help you actively study offline:</h2>
                 <ul>
